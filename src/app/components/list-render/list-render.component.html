@@ -1,0 +1,14 @@
+<h2>Lista de pets</h2>
+<div class="wrapper">
+  <div class="animal-details">{{animalDetails}}</div>
+</div>
+<ul class="pet-list">
+@for(animal of animals;track $index){
+    <li>
+        <p class="pet-name">Pet: {{animal.name}}</p>
+        <p class="pet-type">Tipo: {{animal.type}}</p>
+        <button (click)="showAge(animal)">Mostrar idade</button>
+        <button (click)="removeAnimal(animal)">Remover Animal</button>
+    </li>
+}
+</ul>
