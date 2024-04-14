@@ -4,6 +4,7 @@ import { RouterOutlet,RouterLink } from '@angular/router';
 /*Components*/
 import { NavbarComponent } from './components/layout/navbar/navbar.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
+//Atualização 3
 
 @Component({
   selector: 'app-root',
