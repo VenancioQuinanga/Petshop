@@ -1,0 +1,20 @@
+<div class="pet">
+  <h1>Nossos pets</h1>
+  <div class="wrapper">
+    @if(petDetails){
+      <div class="animal-details">{{petDetails}}</div>
+    }
+  </div>
+  
+  @for(pet of pets;track $index){
+    <app-pet-card
+      [id]="pet.id"
+      [name]="pet.name"
+      [image]="pet.image"
+      [type]="pet.type"
+      (showPetDetails)="onShowPetDetails(pet)"
+      (removePet)="onRemovePet(pet)"
+    >
+    </app-pet-card>
+  }
+</div>

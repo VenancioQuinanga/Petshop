@@ -1,0 +1,41 @@
+<div class="wrapper">
+  <div class="wrapper">
+    @if(message){
+      <div class="msg msg-success">{{message}}</div>
+     } 
+  </div>
+ <form (ngSubmit)="submit()" [formGroup]="petForm" #formDir="ngForm">
+   <h1>{{formDetail}}</h1>
+   <div class="input-box">
+     <label for="">Nome</label>
+     <input type="text" name="name" placeholder="Como se chama o seu animal?" formControlName="name">
+     @if(name.invalid && formDir.submitted){
+      <div class="validation-error">O nome é obrigatório!</div>
+     }
+   </div>
+   <div class="input-box">
+     <label for="">Tipo</label>
+     <input type="text" name="type" placeholder="Qual é o tipo de animal?" formControlName="type">
+     @if(type.invalid && formDir.submitted){
+      <div class="validation-error">O Tipo é obrigatório!</div>
+     }
+   </div>
+   <div class="input-box">
+     <label for="">Idade</label>
+     <input type="text" name="age" placeholder="Quantos anos ele têm?" formControlName="age">
+     @if(age.invalid && formDir.submitted){
+      <div class="validation-error">A idade é obrigatória!</div>
+     }
+   </div>
+   <div class="input-box">
+     <label for="">Raça</label>
+     <input type="text" name="race" placeholder="De que raça é ele?" formControlName="race">
+     @if(race.invalid && formDir.submitted){
+      <div class="validation-error">A raça é obrigatória!</div>
+     }
+   </div>
+   <div class="input-box">
+     <button>{{btnText}}</button>
+   </div>
+ </form>
+</div>

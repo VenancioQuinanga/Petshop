@@ -1,0 +1,15 @@
+@if(pet){
+ <div class="pet-card">
+  <img src="../../../../assets/img/pets/{{pet.image}}">
+  <p>Código: {{pet.id}}</p>
+  <p>Pet: {{pet.name}}</p>
+  <p>Tipo: {{pet.type}}</p>
+  <p>Raça: {{pet.race}}</p>
+  <p>Idade: {{pet.age}} ano(s)</p>
+ </div>
+}@else{
+ <div class="pet-not-found wrapper">
+   <div class="msg msg-error">Erro, pet não encontrado!</div>
+ </div>
+}
+

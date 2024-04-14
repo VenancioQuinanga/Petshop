@@ -1,0 +1,33 @@
+.pet-card{
+    display: inline-block;
+    background-color: yellow;
+    padding: 1em;
+    margin: 2em;
+    border: 1px solid yellow;
+    border-radius: 1em;
+    transition: .5s;
+}
+
+.pet-name,.pet-type{
+    color: blue;
+    font-weight: bold;
+}
+
+.pet-card button{
+    margin-top: .7em;
+    margin-left: .3em;
+    padding: 1em;
+    font-weight: bold;
+    background-color: blue;
+    color: #fff;
+    border: 3px solid rgba(0, 0, 255, 0.773);
+    border-radius: 1em;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.pet-card button:hover{
+    background-color: #fff;
+    border: 3px solid blue;
+    color: blue;
+}

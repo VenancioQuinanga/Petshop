@@ -1,0 +1,81 @@
+.input-box{
+    margin-top: 1em;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+form{
+    background-color: #0000008c;
+    padding-top: .5em;
+    padding-bottom: 1em;
+    margin-bottom: 5em;
+    border-radius: 2em;
+}
+
+form h1{
+    color: #fff;
+    font-weight: bold;
+}
+
+.input-box input{
+    text-indent: .5em;
+    display: block;
+    border: none;
+    border-radius: 2em;
+    height: 3em;
+    width: 22em;
+}
+
+.input-box input::placeholder{
+    color: blue;
+    font-weight: bold;
+}
+
+.input-box label{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: .4em;
+    text-align: start;
+}
+
+.input-box button{
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+    border: 3px solid blue;
+    border-radius: 3em;
+    width: 22em;
+    height: 3em;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.input-box button:hover{
+    color: blue;
+    background: #fff;
+}
+
+.validation-error{
+    font-weight: bold;
+    color: red;
+    font-size: 1em;
+    margin-top: .3em;
+    border-bottom: 1px solid red;
+    padding-left: .3em;
+    padding-right: .3em;
+}
+
+@media (max-width:320px){
+    .input-box input,.input-box button{
+        width: 20em !important;
+        display: block;
+    }
+
+    .input-box{
+        margin-left: 1.5em !important;
+    }
+}

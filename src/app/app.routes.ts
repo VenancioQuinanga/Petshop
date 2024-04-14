@@ -1,15 +1,15 @@
 import { Routes } from '@angular/router';
 
 /* Components */
-import { ListRenderComponent } from './components/list-render/list-render.component';
-import { IfRenderComponent } from './components/if-render/if-render.component';
-import { FirstComponentComponent } from './components/first-component/first-component.component';
-import { PipesComponent } from './components/pipes/pipes.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { NewPetComponent } from './components/pages/pet/new-pet/new-pet.component';
+import { PetsComponent } from './components/pages/pet/pets/pets.component';
+import { SeePetComponent } from './components/pages/pet/see-pet/see-pet.component';
 
 export const routes: Routes = [
-    {path:'',component:FirstComponentComponent},
-    {path:'list',component:ListRenderComponent},
-    {path:'if',component:IfRenderComponent},
-    {path:'pipe',component:PipesComponent}
+    {path:'',component:HomeComponent},
+    {path:'pets',component:PetsComponent},
+    {path:'pets/:id',component:SeePetComponent},
+    {path:'new-pet',component:NewPetComponent},
 ];
 

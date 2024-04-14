@@ -3,9 +3,42 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
+    background-image: url(../../app_angular/src/assets/img/banners/bg.jpg);
+    background-repeat: repeat;
 }
 
-p{
-    color: blue;
-    padding: 5px;
+.wrapper{
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+}
+
+.msg{
+    color: #fff;
+    padding: 1em;
+    border-radius: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+.msg-success{
+    background-color: rgba(0, 128, 0, 0.665);
+}
+
+.msg-error{
+    background-color: rgba(255, 0, 0, 0.748);
+}
+
+.main-container{
+    text-align: center;
+    padding-top: 10em;
+}
+
+@media (max-width:320px){
+    .wrapper{
+        width: 320px !important;
+    }
 }
