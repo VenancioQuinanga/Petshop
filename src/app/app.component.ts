@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet,RouterLink } from '@angular/router';
 
-/*Components*/
+/*Components */
 import { NavbarComponent } from './components/layout/navbar/navbar.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 
