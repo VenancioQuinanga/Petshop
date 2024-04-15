@@ -3,8 +3,11 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
+    /*
     background-image: url('../../app_angular/src/assets/img/banners/bg.jpg');
     background-repeat: repeat;
+    */
+    background-color: #000000dc;
 }
 
 .wrapper{
