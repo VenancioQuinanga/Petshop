@@ -2,6 +2,8 @@
   <img src="../../../../assets/img/pets/{{image}}" width="300" height="250">
   <p class="pet-name">Pet: {{name}}</p>
   <p class="pet-type">Tipo: {{type}}</p>
-  <button routerLink="/pets/{{id}}">Ver detalhes</button>
+  <a routerLink="/pets/{{id}}">
+    <button>Ver detalhes</button>
+  </a>
   <button (click)="handleRemove()">Remover Pet</button>    
 </div>
